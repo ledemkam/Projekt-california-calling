@@ -1,0 +1,494 @@
+/* Farbe: #fff / #000  ;     font-family: 'Work Sans', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ @font-face {
+    font-family: mylarish;
+    src: url(../font-familly/LarishNeueSemibold.woff);
+  }
+  /*--------main------*/
+  .main{
+      display: grid;
+      height: 200vh;
+      background-color: #000;
+      color: #fff;
+
+
+      grid-template-columns: auto;
+      grid-template-rows: 100px 500px 200px 500px 400px;
+  }
+
+  .bord {
+     display: flex;
+    justify-content: center;
+
+    height:100px;
+	 text-align: center;
+
+
+    grid-column-end: auto;
+    grid-row-start: 1;
+
+
+}
+.vertical{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.site{
+
+    display: grid;
+    height: 200px;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.site > h1{
+
+    font-size: 70px;
+}
+
+ div.site > h2 {
+
+font-size: 70px;
+
+text-align: center;
+}
+
+
+
+
+    .site  h2 {
+        color: black;
+        -webkit-text-stroke: 2px white;
+        -webkit-text-fill-color:#000;
+    }
+
+
+
+
+.site > h1, .site > h2 {
+    line-height: 3rem;
+}
+
+
+.wild{
+
+    display: flex;
+    height: 300px;
+    grid-column-end: auto;
+    grid-row-start: 3;
+    justify-content: space-between;
+
+
+}
+
+.bear{
+
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+.rsvp{
+    display: flex;
+    width: 150px;
+    padding-right: 20px;
+
+
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.info{
+
+    display: grid;
+    height: 500px;
+    font-size: 50px;
+    grid-column-end: auto;
+    grid-row-start: 4;
+    padding-left: 40px;
+}
+
+.fire{
+
+     display: flex;
+     height: 400px;
+     grid-column-end: auto;
+     grid-row-start: 5;
+     justify-content: space-between;
+
+
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    font-size: 20px;
+    padding-left: 40px;
+
+}
+
+.price strong{
+    font-size: 70px;
+}
+
+
+.maps{
+    display: flex;
+    width: 300px;
+    height: 250px;
+}
+
+.middle{
+    position: relative;
+    height: 240vh;
+}
+
+/*--------section----*/
+
+.img1{
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top: -80px;
+}
+.img2{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+
+
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    top:20%;
+
+
+}
+
+.text1 > h1 {
+
+font-size: 70px;
+
+}
+.img3{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 25%;
+
+}
+
+.img4{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+
+
+}
+.img5{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+
+
+}
+.img6{
+    display: flex;
+    position: absolute;
+    bottom: 27%;
+    left: 0;
+
+
+
+}
+.text2{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 40%;
+    bottom: 25%;
+
+}
+.img7{
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    right: 20%;
+    z-index: 1;
+
+
+}
+.gold{
+    display: flex;
+
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+    width: 1600px;
+    margin-top: 10%;
+
+
+}
+
+.bear{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.bear > h1{
+
+    font-size: 70px;
+}
+
+
+
+
+.resil{
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-size: 20px;
+}
+.gb1{
+
+    position: absolute;
+    bottom: -40px;
+    left: 20%;
+}
+.gb2{
+
+    position: absolute;
+    bottom: -20px;
+    right: 35%;
+}
+
+
+
+.hero{
+  display: flex;
+  height: 140vh;
+  position: relative;
+
+}
+
+.bildanim {
+     position: absolute;
+     top: -70px;
+     right: -70px;
+     z-index: -2;
+
+
+ }
+
+
+
+ /*-----animation code----*/
+
+  img.circle{
+
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes circle {
+
+
+    from {  transform: rotate(0deg);
+
+       }
+    to   {  transform: rotate(360deg);
+
+
+    }
+
+
+
+}
+
+/*-------ende animation-----*/
+.lif{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 20%;
+    width: 1500px;
+
+}
+.thep{
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.thep > h1 {
+    font-size: 70px;
+}
+
+.artis{
+
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.artis > p {
+
+    font-size: 20px;
+
+}
+
+.pb3{
+ position: absolute;
+ bottom: 60px;
+ left: 30%;
+ z-index: 1;
+
+}
+.rosebear{
+    position: absolute;
+    bottom: 40px;
+    right: 20%;
+}
+
+/*------footer----*/
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 80px;
+}
+.log > p {
+    font-size: 60px;
+}
+
+.rbutton{
+    width: 100px;
+    height: 50px;
+}
+
+.rbutton:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    width: 200px;
+
+}
+
+
+.bildfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.end{
+    display: flex;
+    padding-top: 15px;
+    line-height: 30px;
+}
+
+/*------animation------*/
+.animationFoot {
+    margin: 0;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -155px;
+    margin-top: 15%;
+    overflow: hidden;
+    width: 58%;
+}
+
+.animationDate {
+    white-space: nowrap;
+    color:black;
+    font-size: 5em;
+    animation: date 9s linear infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+@keyframes date {
+    from
+        {
+            transform: translate3d(100%, 0%, 0px);
+        }
+        to
+        {
+            transform: translate3d(-100%, 0%, 50px);
+        }
+    }
+
+    .animationDate span {
+        color: #fff;
+        text-shadow: 1px  1px 1px #000,
+        1px -1px 1px #000,
+        -1px  1px 1px #000,
+        -1px -1px 1px #000;
+        }
